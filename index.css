@@ -5,28 +5,23 @@ nav {
   padding-top: 5px;
   box-sizing: border-box;
 }
-  ul.menu {
-    display: flex;
-  }
-  li.menu {
-    list-style: none;
-  }
+ul.menu {
+  display: flex;
+}
+li.menu {
+  list-style: none;
+}
 @media only screen
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
         ul{
           display: inline-block;
         }
         ul img{
           display: flex;
-          height: 100%;
-        }
-        ul.menu {
-          display: flex;
-        }
-        li.menu {
-          list-style: none;
+          display: inline-block;
+          height: 80px;
         }
         a {
           display: block;
