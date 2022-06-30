@@ -9,22 +9,22 @@
       padding-top: 5px;
       box-sizing: border-box;
     }
-    ul img{
-      display: flex;
+      ul img{
+        display: flex;
+      }
+      ul.menu {
+        display: flex;
+      }
+      li.menu {
+        list-style: none;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-right: 35px;
+      }
     }
-    ul.menu {
-      display: flex;
-    }
-    li.menu {
-      list-style: none;
-    }
-    a {
-      display: block;
-      text-decoration: none;
-      color: white;
-      margin-right: 35px;
-    }
-  }
 footer{
   text-align: center;
 }
