@@ -17,6 +17,10 @@
     color: white;
     margin-right: 35px;
   }
+  ul img{
+    display: inline-block;
+    height: 80px;
+  }
 
   footer{
     text-align: center;
