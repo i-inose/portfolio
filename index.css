@@ -21,6 +21,9 @@
     display: inline-block;
     height: 300px;
   }
+  h2 {
+    color:darkorange;
+  }
 
   footer{
     text-align: center;
