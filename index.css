@@ -11,6 +11,30 @@
   li.menu {
     list-style: none;
   }
+  .content1 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  img.content1{
+    width: 900px;
+    height: 600px;
+  }
+  .content2 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  img.content2{
+    width: 900px;
+    height: 600px;
+  }
+  .content3{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  img.content1{
+    width: 900px;
+    height: 600px;
+  }
   a {
     display: block;
     text-decoration: none;
@@ -19,7 +43,7 @@
   }
   ul img{
     display: inline-block;
-    height: 150px;
+    height: 300px;
   }
   h2 {
     color:darkorange;
