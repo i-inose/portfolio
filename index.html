@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My Work - Portfolio</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>portfolio</title>
-    <link href="index.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <nav>
-        <ul class="menu">
-            <li class="menu"><a href="#about">About</a></li>
-            <li class="menu"><a href="#skill">Skill</a></li>
-            <li class="menu"><a href="#contents">Contents</a></li>
-            <li class="menu"><a href="#field">Field</a></li>
-            <li class="menu"><a href="#works">Works</a></li>
-            <li class="menu"><a href="#contact">Contact</a></li>
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html">Portfolio</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#field">Field</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://twitter.com/pax34_i" target="_blank">Twitter</a><li>
+            <a href="https://www.instagram.com/notorious__34/" target="_blank">Instagram</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
-    <h2 id="about">About</h2>
-    <ul>
-		<img src="i-inose.jpg" >
-        <img src="sauna.jpeg">
-	    <img src="hondana.jpeg">
-        <li>名前：伊野瀬 出</li>
-        <li>所属：武蔵野大学データサイエンス学部データサイエンス学科</li>
-        <li>趣味：サウナ、読書</li>
-        <li>目標：無駄な労力を使わずに生きる</li>
-    </ul>
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="mainvisual-sp.jpg">
+          <img src="mainvisual-pc.jpg" alt="テキストテキストテキスト">
+        </picture>
+      </div>
 
-    <h2 id="skill">Skill</h2>
-    <ul>
-        <li>Python</li>
-    </ul>
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+          <li><h2><img src="i-inose.jpg" ></h2></li>
+          <li><h2>名前：伊野瀬 出</h2></li>
+          <li><h2>所属：武蔵野大学データサイエンス学部データサイエンス学科</h2></li>
+          <li><h2>趣味：サウナ、読書</h2></li>
+          <li><h2>目標：無駄な労力を使わずに生きる</h2></li>
+        </ul>
+      </section>
 
-    <h2>Contents</h2>
-    <div class="content">
-        <div  class="content1">
-            <ul>
-                <h3>
-                    <li>Covid-19の重傷者数と死者数を示すグラフ</li>
-                </h3>
-            </ul>
-            <p>概要：厚生労働省のオープンファイルとPythonのフレームワークを用いて作成した。</p>
-            <img src="covidill2.png" class="content1">
-        </div>
-        <div class="content2">
-            <ul>
-                <h3>
-                    <li>タイタニック号の生存予測</li>
-                </h3>
-            </ul>
-            <p>概要：kaggleのタイタニックのデータセットとランダムフォレストを用いて作成した。</p>
-            <img src="titanic.png" class="content2">
-        </div>
-        <div class="content3">
-            <ul>
-                <h3>
-                    <li>1年後期研究内容</li>
-                </h3>
-            </ul>
-            <p>概要：研究に手をつけるまでは行かなかったが、時間をかけて研究内容を考えた。</p>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQDf29OIwX3ZJW4DB3BoFVg2Jhg0SQZnbub6g3cj-ZEZXR-wi348OsB2tdAeRYfqS5DcYiEixL3KdhA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="content3"></iframe>
-        </div>
-    </div>
+      <section id="skill" class="wrapper">
+        <h2 class="sec-title">Skill</h2>
+        <li><h2>・Python</h2></li>
+      </section>
 
-    <h2 id="field">Field</h2>
-    <ul>
-        <li>医療AI</li>
-	    <li>サイバーセキュリティ</li>
-    </ul>
+      <section id="field" class="wrapper">
+        <h2 class="sec-title">Field</h2>
+        <li><h2>・サイバーセキュリティ</h2></li>
+      </section>
 
-    <h2 id="works">Works</h2>
-    <ul>
-        <li>次回課題</li>
-    </ul>
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+          <li>
+            <p>Covid-19の重傷者数と死者数グラフ</p>
+            <a href="https://github.com/i-inose/covidill2.git"><img src="covidill2.png" alt="テキストテキストテキスト"></a>
+            <p>概要<br>厚生労働省のオープンファイルとPythonのフレームワークを用いて作成した。</p>
+          </li>
+          <li>
+            <p>タイタニック号の生存予測</p>
+            <a href="https://github.com/i-inose/titanic.git"><img src="titanic.png" alt="テキストテキストテキスト"></a>
+            <p>概要<br>kaggleのタイタニックのデータセットとランダムフォレストを用いて作成した。</p>
+          </li>
+          <li>
+            <p>1年後期研究内容</p>
+            <a href="https://docs.google.com/presentation/d/1rPPrKhVPQqEGYVJrK352wLlzsU6KHwzuDoigfFUckJE/edit?usp=sharing"><img src="mirai.png" alt="テキストテキストテキスト" ></a>
+            <p>概要<br>研究に手をつけるまでは行かなかったが、時間をかけて研究内容を考えた。</p>
+            </li>
+          </li>
+          <li><img src="works4.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="works5.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="works6.jpg" alt="テキストテキストテキスト"></li>
+        </ul>
+      </section>
 
-    <h2 id="contact">Contact</h2>
-    <ul>
-        <li>次回課題</li>
-    </ul>
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <dt>2022.XX.XX</dt>
+          <dd>Comming Soon</dd>
+          <dt>2022.XX.XX</dt>
+          <dd>Comming Soon</dd>
+          <dt>2022.XX.XX</dt>
+          <dd>Comming Soon</dd>
+          <dt>2022.XX.XX</dt>
+          <dd>Comming Soon</dd>
+          <dt>2022.XX.XX</dt>
+          <dd>Comming Soon</dd>
+        </dl>
+      </section>
 
-    <footer>©︎2022 Izuru Inose</footer>
-</body>
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>©︎2022 Izuru Inose</p>
+    </footer>
+
+  </body>
 </html>
