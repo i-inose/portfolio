@@ -1,129 +1,250 @@
-  nav {
-    width: 100%;
-    height: 70px;
-    background-color: darkorange;
-    padding-top: 5px;
-    box-sizing: border-box;
-  }
-  ul.menu {
-    display: flex;
-  }
-  li.menu {
-    list-style: none;
-  }
-  .content1 {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  img.content1{
-    width: 900px;
-    height: 600px;
-  }
-  .content2 {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  img.content2{
-    width: 900px;
-    height: 600px;
-  }
-  .content3{
-    max-width: 100%;
-    max-height: 100%;
-  }
-  img.content1{
-    width: 900px;
-    height: 600px;
-  }
-  a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    margin-right: 35px;
-  }
-  ul img{
-    display: inline-block;
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+.size ul img{
+      display: inline-block;
     height: 300px;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+  color: black;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+#header li img.icon {
+  width: 20px;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about ul {
+  margin-bottom: 30px;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align:justify;
+}
+
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#works li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#news dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#news dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
   }
-  h2 {
-    color:darkorange;
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
   }
 
-  footer{
-    text-align: center;
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
   }
 
-  @media all and (min-width: 1024px) and (max-width: 1280px) { }
- 
-  @media all and (min-width: 768px) and (max-width: 1024px) { }
-   
-  @media all and (min-width: 480px) and (max-width: 768px) { }
-   
-  @media all and (max-width: 480px) { }
-   
-  /*------------------------------------------
-    Foundation Media Queries 
-     http://foundation.zurb.com/docs/media-queries.html
-  --------------------------------------------*/
-   
-  /* Small screens - MOBILE */
-  @media only screen { } /* Define mobile styles - Mobile First */
-   
-  @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-   
-  /* Medium screens - TABLET */
-  @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
-   
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-   
-  /* Large screens - DESKTOP */
-  @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
-   
-  @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
-   
-  /* XLarge screens */
-  @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-   
-  @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-   
-  /* XXLarge screens */
-  @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
-   
-  /*------------------------------------------*/
-   
-   
-   
-  /* Portrait */
-  @media screen and (orientation:portrait) { /* Portrait styles here */ }
-  /* Landscape */
-  @media screen and (orientation:landscape) { /* Landscape styles here */ }
-   
-   
-  /* CSS for iPhone, iPad, and Retina Displays */
-   
-  /* Non-Retina */
-  @media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works ul {
+    flex-direction: column;
   }
-   
-  /* Retina */
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
+  #works li {
+    width: 100%;
   }
-   
-  /* iPhone Portrait */
-  @media screen and (max-device-width: 480px) and (orientation:portrait) {
-  } 
-   
-  /* iPhone Landscape */
-  @media screen and (max-device-width: 480px) and (orientation:landscape) {
+
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #news dl {
+    flex-direction: column;
   }
-   
-  /* iPad Portrait */
-  @media screen and (min-device-width: 481px) and (orientation:portrait) {
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
   }
-   
-  /* iPad Landscape */
-  @media screen and (min-device-width: 481px) and (orientation:landscape) {
+  #news dd {
+    width: 100%;
+    padding-top: 0;
   }
+
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
+}
