@@ -7,7 +7,7 @@ body {
   color: #24292e;
 }
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #24292e;
 }
 img {
@@ -116,8 +116,9 @@ News
   padding: 15px;
   color:#24292e;
 }
-#news dd a{
+#news dd a {
   color: #24292e;
+  text-decoration: underline;
 }
 
 /*-------------------------------------------
