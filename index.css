@@ -8,6 +8,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #24292e;
 }
 img {
   max-width: 100%;
@@ -113,6 +114,10 @@ News
   width: 80%;
   border-bottom: solid 1px #c8c8c8;
   padding: 15px;
+  color:#24292e;
+}
+#news dd a{
+  color: #24292e;
 }
 
 /*-------------------------------------------
@@ -180,5 +185,8 @@ SP
   #news dd {
     width: 100%;
     padding-top: 0;
+  }
+  #news dd a{
+    color: #24292e;
   }
 }
