@@ -1,36 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I'm a web developer with a passion for design. I'm always looking for new ways to create beautiful and functional websites.</p>
-      <a href="#">Learn more about me</a>
-    </section>
-    <section>
-      <h2>My Work</h2>
-      <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contact Me</h2>
-      <p>You can reach me by email at <a href="#">myemail@example.com</a> or by phone at 123-456-7890.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 My Portfolio</p>
-  </footer>
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My Work - Portfolio</title>
+    <meta name="description" content="公式サイト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html">Izuru Inose</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Self-Introduction</a></li>
+          <li><a href="#news">Achievement</a></li>
+          <li><a href="https://github.com/i-inose">Github</a></li>
+          <li><a href="https://twitter.com/pax34_i">Twitter</a></li>
+          <li><a href="https://pypi.org/user/i-inose/">PyPI</a></li>
+          <li><a href="mailto:i.inose0304@gmail.com">Mail</a></li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="mainvisual-pc.jpg">
+          <img src="mainvisual-pc.jpg" alt="背景">
+        </picture>
+      </div>
+
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">Self-Introduction</h2>
+        <ul>
+          <li><h3>Name : Izuru Inose</h3></li>
+          <li><h3>University : Musashino University</h3></li>
+        </ul>
+      </section>
+
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">achievement</h2>
+        <dl>
+          <dt>2023.04.19</dt>
+          <dd>
+            <a href="https://pypi.org/project/maskcovid/">
+              Released maskcovid in PyPI.
+            </a>
+          </dd>
+          <dt>2023.04.14</dt>
+          <dd>
+            <a href="https://github.com/i-inose/anspy">
+              Released anspy in github.
+            </a>
+          </dd>
+          <dt>2022.11.09</dt>
+          <dd>
+            <a href="https://pypi.org/project/covidillness/">
+              Released covidillness in PyPI.
+            </a>
+          </dd>
+          <dt>2022.11.10</dt>
+          <dd>
+            <a href="https://pypi.org/project/japandeaths/">
+              Released japandeaths in PyPI.
+            </a>
+          <dt>2022.07.14</dt>
+          <dd>
+            <a href="https://github.com/i-inose/BERT-to-Predict-Hidden-Words">
+              Released BERT-to-Predict-Hidden-Words in github.
+            </a>
+          </dd>
+        </dl>
+      </section>
+    </main>
+  </body>
 </html>
